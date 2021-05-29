@@ -1,4 +1,4 @@
-package com.mika.app;
+package com.demo.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,7 +11,7 @@ public class Application {
 
     @RequestMapping("/")
     String Index() {
-        int x = 10;
+        int x = 30;
         int y = 20;
         int ans = x + y;
         return "Hello World! " + ans;

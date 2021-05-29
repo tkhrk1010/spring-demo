@@ -11,3 +11,5 @@ services:
       - .:/app
     ports:
       - "8080:8080"
+      # for remote debug
+      - "5005:5005"
