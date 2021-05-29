@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  web:
+    build:
+      # Dockerfile の app のコピーのために必要なパス指定
+      context: .
+      # context のパスから見た Dockerfile の場所
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    ports:
+      - "8080:8080"
